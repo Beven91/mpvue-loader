@@ -1,8 +1,8 @@
-# mpvue-loader
+# mpvue-webpack4-loader
 
 >Webpack loader for mpvue components
 
-本仓库是 fork 自 [vue-loader](https://github.com/vuejs/vue-loader) 修改而来，主要为 webpack 打包 mpvue components 提供能力。
+本仓库是 fork 自 [mpvue-loader](https://github.com/mpvue/mpvue-loader) 修改而来，主要为 webpack 打包 mpvue components 提供能力。
 
 更多详细文档请查阅 [mpvue-loader](http://mpvue.com/build/mpvue-loader)。
 
