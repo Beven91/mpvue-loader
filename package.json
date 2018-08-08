@@ -1,11 +1,11 @@
 {
-  "name": "mpvue-loader",
+  "name": "mpvue-loader-webpack4",
   "version": "1.1.0",
   "description": "mpvue single-file component loader for Webpack",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpvue/mpvue-loader.git"
+    "url": "git@github.com:Beven91/mpvue-loader.git"
   },
   "keywords": [
     "mpvue",
