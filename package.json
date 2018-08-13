@@ -122,7 +122,7 @@
   "main": "index.js",
   "name": "mpvue-webpack4-loader",
   "peerDependencies": {
-    "css-loader": "*",
+    "css-loader": "*"
   },
   "repository": {
     "type": "git",
@@ -136,5 +136,5 @@
     "precommit": "lint-staged",
     "test": "eslint lib && mocha --slow 5000 --timeout 10000"
   },
-  "version": "1.2.7"
+  "version": "1.2.8"
 }
