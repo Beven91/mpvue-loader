@@ -59,7 +59,9 @@
     "vue-hot-reload-api": "^2.1.0",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.0",
-    "vue-template-es2015-compiler": "^1.5.3"
+    "vue-template-es2015-compiler": "^1.5.3",
+    "de-indent": "^1.0.2",
+    "he": "^1.1.0"
   },
   "deprecated": false,
   "description": "mpvue single-file component loader for Webpack",
@@ -136,5 +138,5 @@
     "precommit": "lint-staged",
     "test": "eslint lib && mocha --slow 5000 --timeout 10000"
   },
-  "version": "1.2.8"
+  "version": "1.2.11"
 }
