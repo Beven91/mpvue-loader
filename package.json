@@ -135,8 +135,8 @@
     "docs:deploy": "bash ./docs/deploy.sh",
     "lint": "eslint lib test",
     "lint:fix": "eslint lib test --fix",
-    "precommit": "lint-staged",
+    "precommit": "",
     "test": "eslint lib && mocha --slow 5000 --timeout 10000"
   },
-  "version": "2.0.0"
+  "version": "2.0.1"
 }
