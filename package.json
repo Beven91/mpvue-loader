@@ -50,6 +50,7 @@
     "lru-cache": "^4.1.1",
     "mkdirp": "^0.5.1",
     "postcss": "^6.0.6",
+    "postcss-mpvue-wxss": "^1.0.2",
     "postcss-load-config": "^1.1.0",
     "postcss-selector-parser": "^2.0.0",
     "relative": "^3.0.2",
@@ -138,5 +139,5 @@
     "precommit": "",
     "test": "eslint lib && mocha --slow 5000 --timeout 10000"
   },
-  "version": "2.0.2"
+  "version": "2.0.3"
 }
