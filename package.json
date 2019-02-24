@@ -1,22 +1,37 @@
 {
-  "name": "mpvue-loader",
-  "version": "1.1.0",
-  "description": "mpvue single-file component loader for Webpack",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mpvue/mpvue-loader.git"
+  "_from": "mpvue-webpack4-loader@^1.1.0",
+  "_id": "mpvue-webpack4-loader@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-nS+zwck76IMSIDd0qrLSiRgGqZQ=",
+  "_location": "/mpvue-webpack4-loader",
+  "_phantomChildren": {
+    "hash-sum": "1.0.2",
+    "loader-utils": "1.1.0"
   },
-  "keywords": [
-    "mpvue",
-    "webpack",
-    "loader"
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "mpvue-webpack4-loader@^1.1.0",
+    "name": "mpvue-webpack4-loader",
+    "escapedName": "mpvue-webpack4-loader",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
   ],
-  "files": [
-    "index.js",
-    "lib"
-  ],
-  "author": "anchengjian",
+  "_resolved": "http://registry.npm.taobao.org/mpvue-webpack4-loader/download/mpvue-webpack4-loader-1.1.0.tgz",
+  "_shasum": "9d2fb3c1c93be88312203774aab2d2891806a994",
+  "_spec": "mpvue-webpack4-loader@^1.1.0",
+  "_where": "/Users/beven/Personal/ireeder-frontend",
+  "author": {
+    "name": "anchengjian"
+  },
+  "bugs": {
+    "url": "https://github.com/Meituan-Dianping/mpvue/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "hucq"
@@ -25,31 +40,8 @@
       "name": "aOrz"
     }
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Meituan-Dianping/mpvue/issues"
-  },
-  "homepage": "https://github.com/mpvue/mpvue-loader",
-  "scripts": {
-    "lint": "eslint lib test",
-    "lint:fix": "eslint lib test --fix",
-    "precommit": "lint-staged",
-    "test": "eslint lib && mocha --slow 5000 --timeout 10000",
-    "docs": "cd docs && gitbook serve",
-    "docs:deploy": "bash ./docs/deploy.sh"
-  },
-  "lint-staged": {
-    "lib/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "test/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "dependencies": {
-    "babelon": "^1.0.5",
+    "babelon7": "^2.0.0",
     "consolidate": "^0.14.0",
     "deep-equal": "^1.0.1",
     "hash-sum": "^1.0.2",
@@ -58,6 +50,7 @@
     "lru-cache": "^4.1.1",
     "mkdirp": "^0.5.1",
     "postcss": "^6.0.6",
+    "postcss-mpvue-wxss": "^1.0.2",
     "postcss-load-config": "^1.1.0",
     "postcss-selector-parser": "^2.0.0",
     "relative": "^3.0.2",
@@ -67,12 +60,12 @@
     "vue-hot-reload-api": "^2.1.0",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.0",
-    "vue-template-es2015-compiler": "^1.5.3"
+    "vue-template-es2015-compiler": "^1.5.3",
+    "de-indent": "^1.0.2",
+    "he": "^1.1.0"
   },
-  "peerDependencies": {
-    "css-loader": "*",
-    "mpvue-template-compiler": "^1.0.12"
-  },
+  "deprecated": false,
+  "description": "mpvue single-file component loader for Webpack",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
@@ -94,7 +87,6 @@
     "marked": "^0.3.6",
     "memory-fs": "^0.4.1",
     "mocha": "^3.4.2",
-    "mpvue-template-compiler": "^1.0.12",
     "node-libs-browser": "^2.0.0",
     "normalize-newline": "^3.0.0",
     "null-loader": "^0.1.1",
@@ -108,5 +100,44 @@
     "vue": "^2.4.1",
     "vue-server-renderer": "^2.4.1",
     "webpack": "^3.3.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/mpvue/mpvue-loader",
+  "keywords": [
+    "mpvue",
+    "webpack",
+    "loader"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "lib/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "test/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "name": "mpvue-webpack4-loader",
+  "peerDependencies": {
+    "css-loader": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Beven91/mpvue-loader.git"
+  },
+  "scripts": {
+    "docs": "cd docs && gitbook serve",
+    "docs:deploy": "bash ./docs/deploy.sh",
+    "lint": "eslint lib test",
+    "lint:fix": "eslint lib test --fix",
+    "precommit": "",
+    "test": "eslint lib && mocha --slow 5000 --timeout 10000"
+  },
+  "version": "2.0.5"
 }
